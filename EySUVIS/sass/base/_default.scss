@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: 'arial-bold';
+  src: url('../fonts/arial-bold.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'arial-black';
+  src: url('../fonts/arial-black.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'arial-bold-italic';
+  src: url('../fonts/arial-bold-italic.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'arial-italic';
+  src: url('../fonts/arial-italic.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  font-family: arial-bold, arial-bold-italic, arial-italic, arial-black, sans-serif, helvetica;
+}
+
