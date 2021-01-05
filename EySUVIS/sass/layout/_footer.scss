@@ -1,0 +1,65 @@
+footer {
+    margin-top: 30px;
+    padding: 0 0 20px 0;
+    img {
+        width: 100%;
+    }
+    .references {
+        font-family: Arial;
+        @include fontSize(18);
+        strong {
+           font-family: arial-bold;
+        }
+    }
+    .footer-logos {
+        padding-top: 100px;
+    }
+    .address {
+        padding: 20px 0 10px;
+        @include fontSize(16);
+        p {
+            font-family: 'arial';
+            margin: 0 16px 0 0;
+        }
+    }  
+    .policies {
+        @include fontSize(16);
+        span {
+            font-family: arial-bold;
+            display: inline;
+            margin: 0 20px 0 0;
+        }
+    }
+    .kala-logo {
+        position: absolute;
+        bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+        img {
+            width: 52%;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .spacing {
+            padding: 0 80px 0 110px;
+        }
+        padding-bottom: 50px;
+        margin-top: 15px;
+        .address {
+            @include fontSize(20);
+            padding-top: 30px;
+        }
+        .policies {
+            @include fontSize(20);
+        }
+        p {
+            display: inline;
+            margin: 0 30px 0 0;
+        }
+    } 
+    @media screen and (min-width: 1200px) {
+        .spacing {
+            padding: 0 120px;
+        }
+    }    
+}

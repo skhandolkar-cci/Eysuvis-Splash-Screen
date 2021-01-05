@@ -1,0 +1,380 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'arial-bold';
+  src: url("../fonts/arial-bold.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'arial-black';
+  src: url("../fonts/arial-black.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'arial-bold-italic';
+  src: url("../fonts/arial-bold-italic.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'arial-italic';
+  src: url("../fonts/arial-italic.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  font-family: arial-bold, arial-bold-italic, arial-italic, arial-black, sans-serif;
+}
+
+header {
+  overflow: s;
+}
+
+header .banner-img {
+  width: 100%;
+}
+
+header .eysuvis-logo {
+  position: absolute;
+  width: 120px;
+  height: 59px;
+  top: 170px;
+  right: 9px;
+}
+
+@media screen and (min-width: 320px) {
+  header .eysuvis-logo {
+    width: 138px;
+    height: 67px;
+    top: 195px;
+    right: 9px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  header .eysuvis-logo {
+    width: 144px;
+    height: 74px;
+    top: 220px;
+    right: 13px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  header .eysuvis-logo {
+    top: 228px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  header .eysuvis-logo {
+    width: 160px;
+    height: 82px;
+    top: 256px;
+    right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .eysuvis-logo {
+    height: 74px;
+    width: 291px;
+    top: 464px;
+    right: 31px;
+    height: 151px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    background-image: url(../images/content-images/header-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 35%;
+    padding: 0 0 14px 0;
+  }
+  header .eysuvis-logo {
+    width: 222px;
+    top: 11px;
+    left: 150px;
+    height: 111px;
+  }
+  header .now-approved {
+    height: 72px;
+    width: 506px;
+    position: relative;
+    top: 190px;
+    margin-left: 109px;
+  }
+  header .coming-soon {
+    position: relative;
+    top: 190px;
+    height: 70px;
+    left: 10px;
+  }
+  header .rx-medicine {
+    font-family: arial;
+    font-size: 20;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: #fff;
+    margin-top: 200px;
+    margin-left: 106px;
+  }
+  header .rx-medicine p {
+    margin: 0;
+  }
+  header .rx-medicine span {
+    font-family: arial-bold-italic;
+    color: #9bbdeb;
+  }
+  header .rx-medicine ul {
+    margin: 0;
+  }
+  header .rx-medicine .treatment {
+    padding: 0 0 0 20px;
+  }
+  header .rx-medicine .tissue-distribution {
+    padding: 0 0 0 20px;
+  }
+  header .rx-medicine .tissue-distribution li {
+    list-style: none;
+  }
+  header .rx-medicine .tissue-distribution li:before {
+    content: '-';
+    padding: 0 4px;
+    font-size: 28;
+    font-size: 1.75rem;
+  }
+  header .rx-medicine .tissue-distribution li:last-child:before {
+    content: none;
+  }
+  header .rx-medicine .dry-eye {
+    color: #f26b3e;
+  }
+  header .rx-medicine .study {
+    margin-top: 10px;
+    font-size: 18;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-position-x: 50%;
+  }
+  header .eysuvis-logo {
+    width: 237px;
+    top: 11px;
+    left: 185px;
+    height: 128px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header .eysuvis-logo {
+    left: 320px;
+  }
+}
+
+.safety-information .fda {
+  font-family: Arial;
+  font-size: 24;
+  font-size: 1.5rem;
+  color: #414042;
+}
+
+.safety-information strong {
+  font-family: arial-bold-italic;
+  color: #413a5f;
+}
+
+.safety-information h2 {
+  font-family: "arial-bold";
+  color: #413a5f;
+  font-size: 24;
+  font-size: 1.5rem;
+}
+
+.safety-information .safety-info {
+  font-family: Arial;
+  font-size: 21;
+  font-size: 1.3125rem;
+  border-top: 2px solid #9f9f9f;
+  border-bottom: 2px solid #9f9f9f;
+  position: relative;
+  top: -16px;
+  z-index: 3;
+  background: #fff;
+}
+
+.safety-information .safety-info p {
+  margin: 0;
+}
+
+.safety-information .safety-info img {
+  width: 16px;
+  position: absolute;
+  right: 10px;
+}
+
+.safety-information .safety {
+  font-size: 21;
+  font-size: 1.3125rem;
+}
+
+.safety-information .safety span {
+  font-family: arial-bold;
+  color: #413a5f;
+}
+
+.safety-information .safety p {
+  font-family: Arial;
+  margin-bottom: 10px;
+  color: #000;
+  line-height: 1.4;
+}
+
+.safety-information .safety .adverse-reaction {
+  margin-bottom: 0;
+}
+
+.safety-information .safety .up-arrow-icon {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .safety-information h2 {
+    font-size: 28;
+    font-size: 1.75rem;
+  }
+  .safety-information .safety-info {
+    font-size: 24px;
+    font-size: 1.5pxrem;
+  }
+  .safety-information .safety {
+    font-size: 24px;
+    font-size: 1.5pxrem;
+  }
+  .safety-information .safety .info {
+    padding: 0 80px 0 110px;
+  }
+  .safety-information .safety .adverse-reaction {
+    margin-bottom: 10px;
+  }
+  .safety-information .safety .up-arrow-icon {
+    display: block;
+    position: absolute;
+    right: 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .safety-information .safety .info {
+    padding: 0 120px;
+  }
+  .safety-information .safety .up-arrow-icon {
+    right: 230px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .safety-information .safety .up-arrow-icon {
+    right: 330px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  padding: 0 0 20px 0;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer .references {
+  font-family: Arial;
+  font-size: 18;
+  font-size: 1.125rem;
+}
+
+footer .references strong {
+  font-family: arial-bold;
+}
+
+footer .footer-logos {
+  padding-top: 100px;
+}
+
+footer .address {
+  padding: 20px 0 10px;
+  font-size: 16;
+  font-size: 1rem;
+}
+
+footer .address p {
+  font-family: 'arial';
+  margin: 0 16px 0 0;
+}
+
+footer .policies {
+  font-size: 16;
+  font-size: 1rem;
+}
+
+footer .policies span {
+  font-family: arial-bold;
+  display: inline;
+  margin: 0 20px 0 0;
+}
+
+footer .kala-logo {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer img {
+    width: 52%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding-bottom: 50px;
+    margin-top: 15px;
+  }
+  footer .spacing {
+    padding: 0 80px 0 110px;
+  }
+  footer .address {
+    font-size: 20;
+    font-size: 1.25rem;
+    padding-top: 30px;
+  }
+  footer .policies {
+    font-size: 20;
+    font-size: 1.25rem;
+  }
+  footer p {
+    display: inline;
+    margin: 0 30px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .spacing {
+    padding: 0 120px;
+  }
+}
+/*# sourceMappingURL=main-style.css.map */
