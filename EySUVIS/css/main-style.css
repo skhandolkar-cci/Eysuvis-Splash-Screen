@@ -36,7 +36,12 @@ body {
 }
 
 header {
-  overflow: s;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 20px;
+  background: #fff;
 }
 
 header .banner-img {
@@ -84,6 +89,15 @@ header .eysuvis-logo {
   }
 }
 
+@media only screen and (min-width: 540px) {
+  header .eysuvis-logo {
+    width: 200px;
+    height: 100px;
+    top: 324px;
+    right: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header .eysuvis-logo {
     height: 74px;
@@ -96,6 +110,7 @@ header .eysuvis-logo {
 
 @media screen and (min-width: 992px) {
   header {
+    position: relative;
     background-image: url(../images/content-images/header-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,12 +222,15 @@ header .eysuvis-logo {
 
 .safety-information .safety-info {
   font-family: Arial;
-  font-size: 21;
-  font-size: 1.3125rem;
+  font-size: 20;
+  font-size: 1.25rem;
   border-top: 2px solid #9f9f9f;
   border-bottom: 2px solid #9f9f9f;
-  position: relative;
-  top: -16px;
+  position: fixed;
+  padding: 20px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   z-index: 3;
   background: #fff;
 }
@@ -248,48 +266,37 @@ header .eysuvis-logo {
   margin-bottom: 0;
 }
 
-.safety-information .safety .up-arrow-icon {
-  display: none;
-}
-
 @media screen and (min-width: 992px) {
   .safety-information h2 {
     font-size: 28;
     font-size: 1.75rem;
   }
+  .safety-information .info {
+    padding: 0 80px 0 110px;
+  }
   .safety-information .safety-info {
-    font-size: 24px;
-    font-size: 1.5pxrem;
+    font-size: 21;
+    font-size: 1.3125rem;
+  }
+  .safety-information .safety-info img {
+    width: 24px;
+    right: 100px;
   }
   .safety-information .safety {
-    font-size: 24px;
-    font-size: 1.5pxrem;
-  }
-  .safety-information .safety .info {
-    padding: 0 80px 0 110px;
+    font-size: 24;
+    font-size: 1.5rem;
   }
   .safety-information .safety .adverse-reaction {
     margin-bottom: 10px;
   }
-  .safety-information .safety .up-arrow-icon {
-    display: block;
-    position: absolute;
-    right: 140px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
+  .safety-information .safety-info img {
+    right: 200px;
+  }
   .safety-information .safety .info {
     padding: 0 120px;
-  }
-  .safety-information .safety .up-arrow-icon {
-    right: 230px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .safety-information .safety .up-arrow-icon {
-    right: 330px;
   }
 }
 
