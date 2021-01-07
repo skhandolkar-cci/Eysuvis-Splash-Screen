@@ -28,7 +28,7 @@
         p {
             margin: 0;
         }
-        img {
+        .up-arrow {
             width: 16px;
             position: absolute;
             right: 10px;
@@ -49,6 +49,22 @@
         .adverse-reaction {
             margin-bottom: 0;
         }
+        .down-arrow-icon {
+            display: block;
+            position: absolute;
+            right: 20px;
+            width: 30px;
+            transform: rotate(180deg);
+        }
+    }
+    .sticky-info {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 0;
+        overflow-y: scroll;
     }
     @media screen and (min-width:992px) {
         h2 {
@@ -59,7 +75,7 @@
         }
         .safety-info { 
             @include fontSize(21);
-           img {
+           .up-arrow {
             width: 24px;
             right: 100px;
            }
@@ -69,17 +85,33 @@
             .adverse-reaction {
                 margin-bottom: 10px;
             }
+            .down-arrow-icon {
+                display: block;
+                position: absolute;
+                right: 140px;
+                transform: rotate(180deg);
+            }
         }
     }
     @media screen and (min-width:1200px) {
         .safety-info { 
-           img {
+           .up-arrow {
             right: 200px;
            }
         }
         .safety {
             .info {
                 padding: 0 120px;
+            }
+            .down-arrow-icon {
+                right: 230px;
+            }
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        .safety {
+            .down-arrow-icon {
+                right: 330px;
             }
         }
     }

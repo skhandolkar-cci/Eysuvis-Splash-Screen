@@ -239,7 +239,7 @@ header .eysuvis-logo {
   margin: 0;
 }
 
-.safety-information .safety-info img {
+.safety-information .safety-info .up-arrow {
   width: 16px;
   position: absolute;
   right: 10px;
@@ -266,6 +266,25 @@ header .eysuvis-logo {
   margin-bottom: 0;
 }
 
+.safety-information .safety .down-arrow-icon {
+  display: block;
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.safety-information .sticky-info {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  overflow-y: scroll;
+}
+
 @media screen and (min-width: 992px) {
   .safety-information h2 {
     font-size: 28;
@@ -278,7 +297,7 @@ header .eysuvis-logo {
     font-size: 21;
     font-size: 1.3125rem;
   }
-  .safety-information .safety-info img {
+  .safety-information .safety-info .up-arrow {
     width: 24px;
     right: 100px;
   }
@@ -289,14 +308,30 @@ header .eysuvis-logo {
   .safety-information .safety .adverse-reaction {
     margin-bottom: 10px;
   }
+  .safety-information .safety .down-arrow-icon {
+    display: block;
+    position: absolute;
+    right: 140px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .safety-information .safety-info img {
+  .safety-information .safety-info .up-arrow {
     right: 200px;
   }
   .safety-information .safety .info {
     padding: 0 120px;
+  }
+  .safety-information .safety .down-arrow-icon {
+    right: 230px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .safety-information .safety .down-arrow-icon {
+    right: 330px;
   }
 }
 
